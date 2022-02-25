@@ -1,4 +1,6 @@
 import os
+
+from Accept_data import AcceptFaceData
 from retinaface import Retinaface
 
 
@@ -8,14 +10,16 @@ def encode_facename(DeviceName):
     '''
     os.chdir(os.path.dirname(__file__))
     retinaface = Retinaface(1)
-
-    list_dir = os.listdir("face_dataset")
+    data = AcceptFaceData(DeviceName)
+    datas  = data["data"]
+    datas = datas["uploadFileList"]
     image_paths = []
     names = []
-    for name in list_dir:
-        image_paths.append("face_dataset/" + name)
-        names.append(name.split("_")[0])
-    #
+    for data in datas:
+        image_paths.append(data["url"])
+        names.append(data["name"])
+    print(image_paths)
+    print(names)
     retinaface.encode_face_dataset(image_paths, names, DeviceName)
 
 

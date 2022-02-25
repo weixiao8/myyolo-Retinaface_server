@@ -20,17 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c67629d-17e0-4a6c-ada2-c7dba7be81ce" name="Default Changelist" comment="增加自动化运行，version == 2.20">
-      <change afterPath="$PROJECT_DIR$/face_dataset/姚泽伟_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accept_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_demo/blog_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_demo/blog_api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_demo/blog_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_demo/blog_demo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_demo/blog_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_demo/blog_demo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data_face/Epoch1-Total_Loss0.5113.pth-Val_Loss1.3740.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data_face/inception_resnetv1_face_encoding.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data_face/inception_resnetv1_names.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data_face/mobilenet_face_encoding.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data_face/mobilenet_names.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell/serverstart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shell/serverstart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data_facenpy/mobilenet_face_encoding-aptx001.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data_facenpy/mobilenet_names-aptx001.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +63,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -74,14 +72,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DataSource\my_project\new\myyolo+Retinaface\model_data_face" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DataSource\my_project\new\myyolo+Retinaface_server" />
       <recent name="D:\DataSource\my_project\new\myyolo+Retinaface\blog_demo\blog_api" />
       <recent name="D:\DataSource\my_project\new\myyolo+Retinaface\face_dataset" />
       <recent name="D:\DataSource\my_project\new\myyolo+Retinaface\shell" />
       <recent name="D:\DataSource\my_project\new\myyolo+Retinaface" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\DataSource\my_project\new\myyolo+Retinaface\model_data_face" />
     </key>
   </component>
@@ -196,16 +194,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="myyolo+Retinaface" />
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="myyolo+Retinaface_server" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\yaozewei\anaconda3\envs\Obd2mini\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -220,16 +218,15 @@
     </configuration>
     <list>
       <item itemvalue="Python.myyolo+Retinaface" />
+      <item itemvalue="Python.server" />
       <item itemvalue="Python.predict" />
       <item itemvalue="Python.encoding" />
       <item itemvalue="Python.client (1)" />
-      <item itemvalue="Python.server (1)" />
       <item itemvalue="Python.jpgpush" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.encoding" />
-        <item itemvalue="Python.server (1)" />
         <item itemvalue="Python.client (1)" />
         <item itemvalue="Python.predict" />
         <item itemvalue="Python.jpgpush" />
@@ -270,7 +267,8 @@
       <workItem from="1645424307849" duration="15422000" />
       <workItem from="1645511637537" duration="9773000" />
       <workItem from="1645576918221" duration="208000" />
-      <workItem from="1645577138684" duration="3511000" />
+      <workItem from="1645577138684" duration="7278000" />
+      <workItem from="1645663156196" duration="5598000" />
     </task>
     <task id="LOCAL-00001" summary="yolo4 + retinaface 完成人脸识别和眼镜检测">
       <created>1639379033050</created>
@@ -371,10 +369,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="增加自动化运行，version == 2.20" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="148" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639986914755">
+    <state x="148" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645582783437">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state x="148" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1382.824@0.0.1382.824" timestamp="1639986914755" />
+    <state x="148" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1382.824@0.0.1382.824" timestamp="1645582783437" />
     <state x="397" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640157437863">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
@@ -387,26 +385,26 @@
       <screen x="0" y="0" width="1382" height="824" />
     </state>
     <state x="552" y="159" key="EnvironmentVariablesDialog/0.0.1382.824@0.0.1382.824" timestamp="1639986511482" />
-    <state x="473" y="168" key="FileChooserDialogImpl" timestamp="1644819448606">
+    <state x="473" y="168" key="FileChooserDialogImpl" timestamp="1645582729144">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state x="473" y="168" key="FileChooserDialogImpl/0.0.1382.824@0.0.1382.824" timestamp="1644819448606" />
-    <state width="1339" height="203" key="GridCell.Tab.0.bottom" timestamp="1645577343768">
+    <state x="473" y="168" key="FileChooserDialogImpl/0.0.1382.824@0.0.1382.824" timestamp="1645582729144" />
+    <state width="1339" height="203" key="GridCell.Tab.0.bottom" timestamp="1645756154379">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state width="1339" height="203" key="GridCell.Tab.0.bottom/0.0.1382.824@0.0.1382.824" timestamp="1645577343768" />
-    <state width="1339" height="203" key="GridCell.Tab.0.center" timestamp="1645577343768">
+    <state width="1339" height="203" key="GridCell.Tab.0.bottom/0.0.1382.824@0.0.1382.824" timestamp="1645756154379" />
+    <state width="1339" height="203" key="GridCell.Tab.0.center" timestamp="1645756154379">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state width="1339" height="203" key="GridCell.Tab.0.center/0.0.1382.824@0.0.1382.824" timestamp="1645577343768" />
-    <state width="1339" height="203" key="GridCell.Tab.0.left" timestamp="1645577343768">
+    <state width="1339" height="203" key="GridCell.Tab.0.center/0.0.1382.824@0.0.1382.824" timestamp="1645756154379" />
+    <state width="1339" height="203" key="GridCell.Tab.0.left" timestamp="1645756154379">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state width="1339" height="203" key="GridCell.Tab.0.left/0.0.1382.824@0.0.1382.824" timestamp="1645577343768" />
-    <state width="1339" height="203" key="GridCell.Tab.0.right" timestamp="1645577343768">
+    <state width="1339" height="203" key="GridCell.Tab.0.left/0.0.1382.824@0.0.1382.824" timestamp="1645756154379" />
+    <state width="1339" height="203" key="GridCell.Tab.0.right" timestamp="1645756154379">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state width="1339" height="203" key="GridCell.Tab.0.right/0.0.1382.824@0.0.1382.824" timestamp="1645577343768" />
+    <state width="1339" height="203" key="GridCell.Tab.0.right/0.0.1382.824@0.0.1382.824" timestamp="1645756154379" />
     <state width="1339" height="262" key="GridCell.Tab.1.bottom" timestamp="1645060386128">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
@@ -427,10 +425,10 @@
       <screen x="0" y="0" width="1382" height="824" />
     </state>
     <state x="452" y="115" key="RollbackChangesDialog/0.0.1382.824@0.0.1382.824" timestamp="1639986305894" />
-    <state x="194" y="58" key="SettingsEditor" timestamp="1639986169384">
+    <state x="194" y="58" key="SettingsEditor" timestamp="1645582758166">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state x="194" y="58" key="SettingsEditor/0.0.1382.824@0.0.1382.824" timestamp="1639986169384" />
+    <state x="194" y="58" key="SettingsEditor/0.0.1382.824@0.0.1382.824" timestamp="1645582758166" />
     <state x="285" y="146" key="Vcs.Push.Dialog.v2" timestamp="1641367668570">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
@@ -455,10 +453,10 @@
       <screen x="0" y="0" width="1382" height="824" />
     </state>
     <state x="393" y="115" width="643" height="594" key="find.popup/0.0.1382.824@0.0.1382.824" timestamp="1639708936574" />
-    <state x="354" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1639722624518">
+    <state x="354" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1645754957931">
       <screen x="0" y="0" width="1382" height="824" />
     </state>
-    <state x="354" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1382.824@0.0.1382.824" timestamp="1639722624518" />
+    <state x="354" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1382.824@0.0.1382.824" timestamp="1645754957931" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,7 +495,7 @@
     <SUITE FILE_PATH="coverage/myyolo_Retinaface$encoding.coverage" NAME="encoding Coverage Results" MODIFIED="1645432371482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myyolo_Retinaface$132.coverage" NAME="132 Coverage Results" MODIFIED="1639986338896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myyolo_Retinaface_server$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1645522053494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myyolo_Retinaface_server$encoding.coverage" NAME="encoding Coverage Results" MODIFIED="1645577343753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myyolo_Retinaface_server$encoding.coverage" NAME="encoding Coverage Results" MODIFIED="1645756154364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myyolo_Retinaface$myyolo_Retinaface.coverage" NAME="myyolo+Retinaface Coverage Results" MODIFIED="1639986438105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/myyolo_Retinaface$Flask__main_py_.coverage" NAME="main.py Coverage Results" MODIFIED="1639989183146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>

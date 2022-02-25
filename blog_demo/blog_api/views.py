@@ -78,8 +78,7 @@ def delete_face(request):
 # 增删人脸之后需要将整个检测模块重启！
 
 def encode_face(request):
-    DeviceName = "NJXQLYFZYXGS-001"
-    if request.method == "GET":
+    if request.method == "POST":
         key = request.META.get("HTTP_SECRETKEY", B'')
         if key != secretKey:
             return JsonResponse({"state": "501", "msg": "秘钥错误，请检查秘钥！"})
@@ -88,5 +87,7 @@ def encode_face(request):
         # 第二次编码会强制清空所有npy文件以保证websocket逻辑正确
         # 如果断网等原因导致人脸库更新失败需要重新生成人脸文件
         #####################################################################
+        data = json.loads(request.body)
+        DeviceName = data["DeviceName"]
         encode_facename(DeviceName)
         return JsonResponse({"state": "200", "msg": "人脸编码成功！新的人脸识别库将在数分钟内更新完成！"})

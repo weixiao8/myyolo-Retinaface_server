@@ -23,6 +23,7 @@ async def send_npy(filepath, websocket):
     fmt = '128si'
     send_buffer = 409600
     if os.path.exists(filepath):
+        time.sleep(0.1)
         filename = os.path.split(filepath)[1]
         filesize = os.path.getsize(filepath)
         print("filename:" + filename + "\nfilesize:" + str(filesize))
