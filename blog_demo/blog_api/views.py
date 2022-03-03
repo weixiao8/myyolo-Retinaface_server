@@ -89,5 +89,8 @@ def encode_face(request):
         #####################################################################
         data = json.loads(request.body)
         DeviceName = data["DeviceName"]
-        encode_facename(DeviceName)
-        return JsonResponse({"state": "200", "msg": "人脸编码成功！新的人脸识别库将在数分钟内更新完成！"})
+        flag = encode_facename(DeviceName)
+        if flag == "200":
+            return JsonResponse({"state": "200", "msg": "人脸编码成功！新的人脸识别库将在数分钟内更新完成！"})
+        if flag == "500":
+            return JsonResponse({"state": "200", "msg": "人脸编码失败！请检查该设备下是否存在待更新的人脸数据！"})

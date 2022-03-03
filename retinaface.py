@@ -291,8 +291,8 @@ class Retinaface(object):
                         if os.path.isfile(path_file2):
                             os.remove(path_file2)
         clear_dir("./model_data_facenpy")
-        file_face = "model_data_facenpy/{backbone}_face_encoding" + "-" + DeviceName + ".npy"
-        file_name = "model_data_facenpy/{backbone}_names" + "-" + DeviceName + ".npy"
+        file_face = "model_data_facenpy/{backbone}_face_encoding" + "@" + DeviceName + ".npy"
+        file_name = "model_data_facenpy/{backbone}_names" + "@" + DeviceName + ".npy"
         np.save(file_face.format(backbone=self.facenet_backbone), face_encodings)
         np.save(file_name.format(backbone=self.facenet_backbone), names)
 

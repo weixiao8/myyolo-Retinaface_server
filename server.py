@@ -60,20 +60,24 @@ async def recv_msg(websocket):
     ################################################################
     file = "./model_data_facenpy/"
     list_device = os.listdir(file)
+    DeviceName = ""
     #################################################################
     # 判断是否生成了npy文件
     # 若没有生成发送404错误代码
     #################################################################
     if len(list_device) != 2:
+        print("未产生npy文件")
         await  websocket.send(struct.pack(fmt, "404".encode(), 0))
         await  websocket.send(struct.pack(fmt, "404".encode(), 0))
-    DeviceName = list_device[0].split("-")[1]
+    if len(list_device) == 2:
+        DeviceName = list_device[0].split("@")[1]
     deviceid = deviceid + ".npy"
     ################################################################
     # 判断给哪个设备发送npy
     # 非对应设备会接受到404的信号
     ################################################################
     if deviceid == DeviceName:
+        print("设备名称正确")
         send_buffer = 409600
         filepath = "./model_data_facenpy/"
         filepath += list_device[0]
@@ -83,6 +87,7 @@ async def recv_msg(websocket):
         filepath += list_device[1]
         await send_npy(filepath, websocket)
     else:
+        print("设备不匹配")
         await  websocket.send(struct.pack(fmt, "404".encode(), 0))
         await  websocket.send(struct.pack(fmt, "404".encode(), 0))
 
@@ -95,7 +100,7 @@ async def main_logic(websocket, path):
 
 
 # 把ip换成自己本地的ip
-start_server = websockets.serve(main_logic, '0.0.0.0', 2022)
+start_server = websockets.serve(main_logic, '0.0.0.0', 10003)
 # 如果要给被回调的main_logic传递自定义参数，可使用以下形式
 # 一、修改回调形式
 # import functools
